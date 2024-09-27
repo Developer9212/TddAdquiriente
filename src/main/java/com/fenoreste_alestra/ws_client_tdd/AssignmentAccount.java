@@ -55,7 +55,8 @@ import javax.xml.bind.annotation.XmlType;
 public class AssignmentAccount {
 
     protected String pan;
-    protected AssignmentAccount.ClientInfo clientInfo;
+    protected AssignamentAccountDto clientInfo;
+    //protected AssignmentAccount.ClientInfo clientInfo;
 
     /**
      * Obtiene el valor de la propiedad pan.
@@ -89,9 +90,16 @@ public class AssignmentAccount {
      *     {@link AssignmentAccount.ClientInfo }
      *     
      */
-    public AssignmentAccount.ClientInfo getClientInfo() {
+    public AssignamentAccountDto getClientInfo() {
         return clientInfo;
     }
+
+    public void setClientInfo(AssignamentAccountDto clientInfo) {
+        this.clientInfo = clientInfo;
+    }
+    /*public AssignmentAccount.ClientInfo getClientInfo() {
+        return clientInfo;
+    } aquii1*/
 
     /**
      * Define el valor de la propiedad clientInfo.
@@ -101,9 +109,10 @@ public class AssignmentAccount {
      *     {@link AssignmentAccount.ClientInfo }
      *     
      */
-    public void setClientInfo(AssignmentAccount.ClientInfo value) {
+    /*public void setClientInfo(AssignmentAccount.ClientInfo value) {
+
         this.clientInfo = value;
-    }
+    }aqui 2*/
 
 
     /**

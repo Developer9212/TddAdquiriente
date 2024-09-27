@@ -12,11 +12,10 @@ import java.util.Date;
 public class Retiro implements Serializable {
 
     @Id
-    private Integer id;
-    private String peticion;
-    private String tarjeta;
     @Temporal(TemporalType.TIMESTAMP)
     private Date fecha;
+    private String peticion;
+    private String tarjeta;
     private Integer codigo;
     private String autorizacion;
     private String descripcion;

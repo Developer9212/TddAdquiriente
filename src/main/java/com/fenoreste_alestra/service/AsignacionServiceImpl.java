@@ -16,4 +16,9 @@ public class AsignacionServiceImpl implements IAsignacionService{
         asignacionDao.save(asignacion);
         return asignacion;
     }
+
+    @Override
+    public Asignacion buscarPorTarjeta(String idTarjeta) {
+        return asignacionDao.buscarPorId(idTarjeta);
+    }
 }

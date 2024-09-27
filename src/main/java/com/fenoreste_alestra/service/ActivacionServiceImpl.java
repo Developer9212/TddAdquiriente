@@ -7,13 +7,12 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ActivacionServiceImpl implements IActivacionService{
-
-    @Autowired
+   
+	@Autowired
     private ActivacionDao activacionDao;
 
     @Override
-    public Activacion guardarActivacion(Activacion activacion) {
-        activacionDao.save(activacion);
-        return activacion;
+    public void guardarActive(Activacion active) {
+        activacionDao.save(active);
     }
 }

@@ -5,4 +5,6 @@ import com.fenoreste_alestra.entity.Asignacion;
 public interface IAsignacionService {
 
     public Asignacion guardarAsignacion(Asignacion asignacion);
+
+    public Asignacion buscarPorTarjeta(String idTarjeta);
 }

@@ -9,10 +9,10 @@ INSERT INTO tablas(idtabla,idelemento,dato1,dato2) VALUES('emisor_adquiriente',"
 //Buenos Aires
 
 DELETE FROM tablas WHERE idtabla='emisor_adquiriente' AND idelemento='url_alestra';
-INSERT INTO tablas(idtabla,idelemento,dato2) VALUES('emisor_adquiriente',"url_alestra',"http://192.168.110.85:6969/syc-siscoop/webservice/buenos-aires/siscoopSecureService');
+INSERT INTO tablas(idtabla,idelemento,dato2) VALUES('emisor_adquiriente','url_alestra','http://192.168.110.85:6969/syc-siscoop/webservice/buenos-aires/siscoopSecureService');
 
 DELETE FROM tablas WHERE idtabla='emisor_adquiriente' AND idelemento='credenciales';
-INSERT INTO tablas(idtabla,idelemento,dato1,dato2) VALUES('emisor_adquiriente',"credenciales',"ws_buenos_aires',"ws_buenos_aires');
+INSERT INTO tablas(idtabla,idelemento,dato1,dato2) VALUES('emisor_adquiriente','credenciales','ws_buenos_aires','ws_buenos_aires');
 
 
 

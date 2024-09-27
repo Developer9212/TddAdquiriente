@@ -317,5 +317,20 @@ public class CardHolderInformationResponse {
         this.telefono = value;
     }
 
-
+    @Override
+    public String toString() {
+        return "CardHolderInformationResponse{" +
+                "code=" + code +
+                ", colonia='" + colonia + '\'' +
+                ", cp='" + cp + '\'' +
+                ", description='" + description + '\'' +
+                ", direccion='" + direccion + '\'' +
+                ", estado='" + estado + '\'' +
+                ", localidad='" + localidad + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", rfc='" + rfc + '\'' +
+                ", tarjeta='" + tarjeta + '\'' +
+                ", telefono='" + telefono + '\'' +
+                '}';
+    }
 }

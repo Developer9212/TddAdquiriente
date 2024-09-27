@@ -8,20 +8,20 @@ import java.util.Date;
 
 @Data
 @Entity
-@Table(name="bloqueo_tdd")
+@Table(name="reemplazo_tdd")
 public class Reemplazo implements Serializable{
 
     @Id
-    private Integer id;
-    private String peticion;
-    private String tarjeta;
     @Temporal(TemporalType.TIMESTAMP)
     private Date fecha;
+    private String peticion;
+    private String tarjeta;
     private Integer codigo;
+    private String descripcion;
     private String autorizacion;
     private String tarjetanueva;
+    private String cuentaambiente;
     private String fechaexpiracion;
-    private String descripcion;
     private String status;
     private String tipo;
     private boolean correcto;

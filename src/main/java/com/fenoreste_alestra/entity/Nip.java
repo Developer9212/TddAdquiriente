@@ -2,22 +2,20 @@ package com.fenoreste_alestra.entity;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
 @Data
 @Entity
-@Table(name="asignacionnip_tdd")
+@Table(name="asignanip_tdd")
 public class Nip implements Serializable {
 
     @Id
-    private Integer id;
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date fecha;
     private String peticion;
     private String tarjeta;
-    private Date fecha;
     private Integer codigo;
     private String descripcion;
     private boolean correcto;

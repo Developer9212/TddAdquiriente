@@ -1,0 +1,154 @@
+2024-09-09 13:25:25 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2024-09-09 13:25:25 INFO  c.f.EmisorAdquirienteApplication - Starting EmisorAdquirienteApplication using Java 1.8.0_231 on DESKTOP-LGL3QCN with PID 2064 (D:\Proyectos_Fenoreste\EmisorAdquiriente\target\classes started by Will in D:\Proyectos_Fenoreste\EmisorAdquiriente)
+2024-09-09 13:25:25 DEBUG c.f.EmisorAdquirienteApplication - Running with Spring Boot v2.6.3, Spring v5.3.15
+2024-09-09 13:25:25 INFO  c.f.EmisorAdquirienteApplication - No active profile set, falling back to default profiles: default
+2024-09-09 13:25:25 INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\Will\.m2\repository\com\sun\xml\ws\jaxws-rt\2.3.3\jaxws-rt-2.3.3.jar referenced one or more files that do not exist: file:/C:/Users/Will/.m2/repository/com/sun/xml/ws/jaxws-rt/2.3.3/jakarta.annotation-api.jar,file:/C:/Users/Will/.m2/repository/com/sun/xml/ws/jaxws-rt/2.3.3/jakarta.activation.jar,file:/C:/Users/Will/.m2/repository/com/sun/xml/ws/jaxws-rt/2.3.3/jakarta.jws-api.jar,file:/C:/Users/Will/.m2/repository/com/sun/xml/ws/jaxws-rt/2.3.3/jakarta.xml.bind-api.jar,file:/C:/Users/Will/.m2/repository/com/sun/xml/ws/jaxws-rt/2.3.3/jakarta.xml.ws-api.jar,file:/C:/Users/Will/.m2/repository/com/sun/xml/ws/jaxws-rt/2.3.3/jakarta.xml.soap-api.jar,file:/C:/Users/Will/.m2/repository/com/sun/xml/ws/jaxws-rt/2.3.3/FastInfoset.jar,file:/C:/Users/Will/.m2/repository/com/sun/xml/ws/jaxws-rt/2.3.3/gmbal.jar,file:/C:/Users/Will/.m2/repository/com/sun/xml/ws/jaxws-rt/2.3.3/ha-api.jar,file:/C:/Users/Will/.m2/repository/com/sun/xml/ws/jaxws-rt/2.3.3/jaxb-impl.jar,file:/C:/Users/Will/.m2/repository/com/sun/xml/ws/jaxws-rt/2.3.3/management-api.jar,file:/C:/Users/Will/.m2/repository/com/sun/xml/ws/jaxws-rt/2.3.3/mimepull.jar,file:/C:/Users/Will/.m2/repository/com/sun/xml/ws/jaxws-rt/2.3.3/pfl-basic.jar,file:/C:/Users/Will/.m2/repository/com/sun/xml/ws/jaxws-rt/2.3.3/pfl-tf.jar,file:/C:/Users/Will/.m2/repository/com/sun/xml/ws/jaxws-rt/2.3.3/policy.jar,file:/C:/Users/Will/.m2/repository/com/sun/xml/ws/jaxws-rt/2.3.3/saaj-impl.jar,file:/C:/Users/Will/.m2/repository/com/sun/xml/ws/jaxws-rt/2.3.3/stax-ex.jar,file:/C:/Users/Will/.m2/repository/com/sun/xml/ws/jaxws-rt/2.3.3/stax2-api.jar,file:/C:/Users/Will/.m2/repository/com/sun/xml/ws/jaxws-rt/2.3.3/streambuffer.jar,file:/C:/Users/Will/.m2/repository/com/sun/xml/ws/jaxws-rt/2.3.3/woodstox-core.jar
+2024-09-09 13:25:25 INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\Will\.m2\repository\org\glassfish\ha\ha-api\3.1.12\ha-api-3.1.12.jar referenced one or more files that do not exist: file:/C:/Users/Will/.m2/repository/org/glassfish/ha/ha-api/3.1.12/hk2.jar,file:/C:/Users/Will/.m2/repository/org/glassfish/ha/ha-api/3.1.12/hk2-core.jar,file:/C:/Users/Will/.m2/repository/org/glassfish/ha/ha-api/3.1.12/class-model.jar,file:/C:/Users/Will/.m2/repository/org/glassfish/ha/ha-api/3.1.12/config.jar,file:/C:/Users/Will/.m2/repository/org/glassfish/ha/ha-api/3.1.12/tiger-types.jar,file:/C:/Users/Will/.m2/repository/org/glassfish/ha/ha-api/3.1.12/bean-validator.jar,file:/C:/Users/Will/.m2/repository/org/glassfish/ha/ha-api/3.1.12/jtype.jar,file:/C:/Users/Will/.m2/repository/org/glassfish/ha/ha-api/3.1.12/auto-depends.jar,file:/C:/Users/Will/.m2/repository/org/glassfish/ha/ha-api/3.1.12/javax.inject.jar,file:/C:/Users/Will/.m2/repository/org/glassfish/ha/ha-api/3.1.12/asm-all-repackaged.jar,file:/C:/Users/Will/.m2/repository/org/glassfish/ha/ha-api/3.1.12/hk2-api.jar,file:/C:/Users/Will/.m2/repository/org/glassfish/ha/ha-api/3.1.12/osgi-resource-locator.jar,file:/C:/Users/Will/.m2/repository/org/glassfish/ha/ha-api/3.1.12/javax.inject.jar
+2024-09-09 13:25:25 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-09 13:25:25 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-09 13:25:25 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-09 13:25:25 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 17 JPA repository interfaces.
+2024-09-09 13:25:25 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$d6f9f78d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-09-09 13:25:25 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-09-09 13:25:26 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http)
+2024-09-09 13:25:26 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+2024-09-09 13:25:26 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-09 13:25:26 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-09-09 13:25:26 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-09 13:25:26 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1205 ms
+2024-09-09 13:25:26 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-09 13:25:26 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2024-09-09 13:25:26 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-09-09 13:25:26 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-09-09 13:25:27 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-09-09 13:25:27 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-09 13:25:28 INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://siscoop.endpoint.ws.syc.com/}SiscoopAlternativeEndpointService from class com.fenoreste_alestra.ws_client_tddImpl.SiscoopAlternativeEndpoint
+2024-09-09 13:25:29 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-09 13:25:29 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-09 13:25:29 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+2024-09-09 13:25:29 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9001 (http) with context path ''
+2024-09-09 13:25:29 INFO  c.f.EmisorAdquirienteApplication - Started EmisorAdquirienteApplication in 4.551 seconds (JVM running for 5.305)
+2024-09-09 13:25:39 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-09 13:25:39 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-09 13:25:39 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-09-09 13:25:39 INFO  c.f.controller.AccountController - Testing...
+2024-09-09 13:25:39 WARN  o.a.cxf.phase.PhaseInterceptorChain - Interceptor for {http://siscoop.endpoint.ws.syc.com/}SiscoopAlternativeEndpointService#{http://siscoop.endpoint.ws.syc.com/}stockCardReplacement has thrown exception, unwinding now
+org.apache.cxf.binding.soap.SoapFault: Security processing failed.
+	at org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor$WSS4JOutInterceptorInternal.handleMessageInternal(WSS4JOutInterceptor.java:274)
+	at org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor$WSS4JOutInterceptorInternal.handleMessage(WSS4JOutInterceptor.java:137)
+	at org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor$WSS4JOutInterceptorInternal.handleMessage(WSS4JOutInterceptor.java:122)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.endpoint.ClientImpl.doInvoke(ClientImpl.java:530)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:441)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:356)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:314)
+	at org.apache.cxf.frontend.ClientProxy.invokeSync(ClientProxy.java:96)
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:140)
+	at com.sun.proxy.$Proxy156.stockCardReplacement(Unknown Source)
+	at com.fenoreste_alestra.service.AccountServiceAlestra.stockCardReplacement(AccountServiceAlestra.java:54)
+	at com.fenoreste_alestra.service.TddGeneralService.getStockCardReplacementResponse(TddGeneralService.java:529)
+	at com.fenoreste_alestra.controller.AccountController.reemplazarTarjeta(AccountController.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.wss4j.common.ext.WSSecurityException: Cannot create Crypto class null
+	at org.apache.wss4j.common.crypto.CryptoFactory.getInstance(CryptoFactory.java:122)
+	at org.apache.wss4j.common.crypto.CryptoFactory.getInstance(CryptoFactory.java:187)
+	at org.apache.cxf.ws.security.wss4j.WSS4JUtils.loadCryptoFromPropertiesFile(WSS4JUtils.java:309)
+	at org.apache.cxf.ws.security.wss4j.AbstractWSS4JInterceptor.loadCryptoFromPropertiesFile(AbstractWSS4JInterceptor.java:221)
+	at org.apache.wss4j.dom.handler.WSHandler.loadCrypto(WSHandler.java:979)
+	at org.apache.wss4j.dom.handler.WSHandler.loadEncryptionCrypto(WSHandler.java:923)
+	at org.apache.wss4j.dom.handler.WSHandler.doSenderAction(WSHandler.java:179)
+	at org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor.access$100(WSS4JOutInterceptor.java:58)
+	at org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor$WSS4JOutInterceptorInternal.handleMessageInternal(WSS4JOutInterceptor.java:266)
+	... 63 common frames omitted
+Caused by: org.apache.wss4j.common.ext.WSSecurityException: Cannot load the resource "/home/emisoradquiriente/emisor-adquiriente/cert-properties/fenoreste.jks"
+	at org.apache.wss4j.common.util.Loader.loadInputStream(Loader.java:73)
+	at org.apache.wss4j.common.crypto.Merlin.loadInputStream(Merlin.java:356)
+	at org.apache.wss4j.common.crypto.Merlin.loadProperties(Merlin.java:224)
+	at org.apache.wss4j.common.crypto.Merlin.<init>(Merlin.java:161)
+	at org.apache.wss4j.common.crypto.CryptoFactory.getInstance(CryptoFactory.java:119)
+	... 71 common frames omitted
+Caused by: java.nio.file.NoSuchFileException: \home\emisoradquiriente\emisor-adquiriente\cert-properties\fenoreste.jks
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:384)
+	at java.nio.file.Files.newInputStream(Files.java:152)
+	at org.apache.wss4j.common.util.Loader.loadInputStream(Loader.java:70)
+	... 75 common frames omitted
+2024-09-09 13:55:50 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-09 13:56:08 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.fenoreste_alestra.EmisorAdquirienteApplicationTests], using SpringBootContextLoader
+2024-09-09 13:56:08 INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.fenoreste_alestra.EmisorAdquirienteApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-09-09 13:56:08 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.fenoreste_alestra.EmisorAdquirienteApplicationTests]: EmisorAdquirienteApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-09 13:56:08 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.fenoreste_alestra.EmisorAdquirienteApplication for test class com.fenoreste_alestra.EmisorAdquirienteApplicationTests
+2024-09-09 13:56:09 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-09-09 13:56:09 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@418c5a9c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@18e36d14, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5082d622, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@13d4992d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@302f7971, org.springframework.test.context.support.DirtiesContextTestExecutionListener@332729ad, org.springframework.test.context.transaction.TransactionalTestExecutionListener@75d2da2d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4278284b, org.springframework.test.context.event.EventPublishingTestExecutionListener@9573584, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3370f42, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6057aebb, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@63eef88a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@53251a66, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6853425f, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@352c1b98]
+2024-09-09 13:56:09 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2024-09-09 13:56:09 INFO  c.f.EmisorAdquirienteApplicationTests - Starting EmisorAdquirienteApplicationTests using Java 1.8.0_231 on DESKTOP-LGL3QCN with PID 22104 (started by Will in D:\Proyectos_Fenoreste\EmisorAdquiriente)
+2024-09-09 13:56:09 DEBUG c.f.EmisorAdquirienteApplicationTests - Running with Spring Boot v2.6.3, Spring v5.3.15
+2024-09-09 13:56:09 INFO  c.f.EmisorAdquirienteApplicationTests - No active profile set, falling back to default profiles: default
+2024-09-09 13:56:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-09 13:56:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 17 JPA repository interfaces.
+2024-09-09 13:56:10 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2cf15ac6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-09-09 13:56:10 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-09-09 13:56:10 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-09 13:56:10 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2024-09-09 13:56:10 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-09-09 13:56:11 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-09-09 13:56:12 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-09-09 13:56:12 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-09 13:56:13 INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://siscoop.endpoint.ws.syc.com/}SiscoopAlternativeEndpointService from class com.fenoreste_alestra.ws_client_tddImpl.SiscoopAlternativeEndpoint
+2024-09-09 13:56:14 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-09 13:56:15 INFO  c.f.EmisorAdquirienteApplicationTests - Started EmisorAdquirienteApplicationTests in 6.729 seconds (JVM running for 7.496)
+2024-09-09 13:56:15 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'

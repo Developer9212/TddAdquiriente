@@ -1,6 +1,8 @@
 
 package com.fenoreste_alestra.ws_client_tdd;
 
+import lombok.Data;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
@@ -32,6 +34,7 @@ import javax.xml.bind.annotation.XmlType;
     "description",
     "availableAmount"
 })
+@Data
 public class BalanceQueryResponseDto {
 
     protected int code;
@@ -94,4 +97,12 @@ public class BalanceQueryResponseDto {
         this.availableAmount = value;
     }
 
+    @Override
+    public String toString() {
+        return "BalanceQueryResponseDto{" +
+                "code=" + code +
+                ", description='" + description + '\'' +
+                ", availableAmount=" + availableAmount +
+                '}';
+    }
 }

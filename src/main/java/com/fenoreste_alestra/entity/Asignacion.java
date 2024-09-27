@@ -12,18 +12,20 @@ import java.util.Date;
 public class Asignacion implements Serializable {
 
     @Id
-    private Integer id;
-    private String peticion;
-    private String tarjeta;
     @Temporal(TemporalType.TIMESTAMP)
     private Date fecha;
+    private String peticion;
+    private String tarjeta;
     private Integer codigo;
     private String descripcion;
-    private String folio;
+    private String autorizacion;
     private String numerocuenta;
     private String numerocliente;
     private String nombrecliente;
     private String clabeinterbancaria;
+    private String fechamovimiento;
+    private String horamovimiento;
     private boolean correcto;
+
     private static final long serialVersionUID = 1L;
 }

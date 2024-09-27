@@ -11,7 +11,6 @@ public class DepositoServiceImpl implements IDepositoService{
     @Autowired
     private DepositoDao depositoDao;
 
-
     @Override
     public Deposito guardarDeposito(Deposito deposito) {
         depositoDao.save(deposito);

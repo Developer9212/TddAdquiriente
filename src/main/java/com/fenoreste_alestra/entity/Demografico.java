@@ -8,15 +8,14 @@ import java.util.Date;
 
 @Data
 @Entity
-@Table(name="modificacion_demograficos")
+@Table(name="datos_demograficos")
 public class Demografico implements  Serializable{
 
     @Id
-    private Integer id;
-    private String peticion;
-    private String tarjeta;
     @Temporal(TemporalType.TIMESTAMP)
     private Date fecha;
+    private String peticion;
+    private String tarjeta;
     private Integer codigo;
     private String descripcion;
     private boolean correcto;

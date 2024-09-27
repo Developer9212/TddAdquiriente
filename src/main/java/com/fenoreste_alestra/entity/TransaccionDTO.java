@@ -12,12 +12,12 @@ import java.util.Date;
 public class TransaccionDTO implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private String autorizacion;
     private Integer idoperacionsaicoop;
     private String tarjeta;
-    private Integer tipotransaccion;
+    private String tipotransaccion;
     private Double monto;
-    private Integer codigo;
+    private String codigo;
     private String descripcion;
     private String fecha;
     private Double saldodisponible;

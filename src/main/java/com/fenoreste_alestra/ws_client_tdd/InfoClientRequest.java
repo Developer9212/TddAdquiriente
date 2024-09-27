@@ -354,4 +354,21 @@ public class InfoClientRequest {
         this.telefono2 = value;
     }
 
+    @Override
+    public String toString() {
+        return "InfoClientRequest{" +
+                "codigoPostal='" + codigoPostal + '\'' +
+                ", colonia='" + colonia + '\'' +
+                ", cuenta='" + cuenta + '\'' +
+                ", direccion='" + direccion + '\'' +
+                ", entidadFederativa='" + entidadFederativa + '\'' +
+                ", nombreCorto='" + nombreCorto + '\'' +
+                ", nombreLargo='" + nombreLargo + '\'' +
+                ", producto='" + producto + '\'' +
+                ", rfc='" + rfc + '\'' +
+                ", sucursal='" + sucursal + '\'' +
+                ", telefono='" + telefono + '\'' +
+                ", telefono2='" + telefono2 + '\'' +
+                '}';
+    }
 }

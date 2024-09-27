@@ -6,20 +6,19 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
-@Data
 @Entity
 @Table(name="activacion_tdd")
+@Data
 public class Activacion implements Serializable {
 
     @Id
-    private Integer id;
     @Temporal(TemporalType.TIMESTAMP)
     private Date fecha;
+    private String autorizacion;
+    private String tarjeta;
     private String peticion;
     private Integer codigo;
     private String descripcion;
-    private String authorizacion;
     private boolean correcta;
-
-    private final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 }

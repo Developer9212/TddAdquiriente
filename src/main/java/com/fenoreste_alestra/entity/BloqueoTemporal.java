@@ -12,13 +12,14 @@ import java.util.Date;
 public class BloqueoTemporal implements Serializable{
 
     @Id
-    private Integer id;
     @Temporal(TemporalType.TIMESTAMP)
     private Date fecha;
+    private String tarjeta;
     private String peticion;
-    private String folio;
-    private String respuesta;
+    private Integer codigo;
+    private String descripcion;
+    private String autorizacion;
     private boolean correcta;
 
-    private final long serialVersionUId = 1L;
+    private static final long serialVersionUId = 1L;
 }

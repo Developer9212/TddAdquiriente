@@ -1,6 +1,8 @@
 
 package com.fenoreste_alestra.ws_client_tdd;
 
+import lombok.Data;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -33,6 +35,7 @@ import javax.xml.bind.annotation.XmlType;
     "code",
     "description"
 })
+@Data
 public class ActivateCardResponse {
 
     protected String authorization;
@@ -103,4 +106,12 @@ public class ActivateCardResponse {
         this.description = value;
     }
 
+    @Override
+    public String toString() {
+        return "ActivateCardResponse{" +
+                "authorization='" + authorization + '\'' +
+                ", code=" + code +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }

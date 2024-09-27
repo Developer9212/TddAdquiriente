@@ -1,6 +1,8 @@
 
 package com.fenoreste_alestra.ws_client_tdd;
 
+import lombok.Data;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -38,6 +40,7 @@ import javax.xml.bind.annotation.XmlType;
     "currentBalance",
     "description"
 })
+@Data
 public class LoadBalanceResponse {
 
     protected String authorization;
@@ -142,4 +145,14 @@ public class LoadBalanceResponse {
         this.description = value;
     }
 
+    @Override
+    public String toString() {
+        return "LoadBalanceResponse{" +
+                "authorization='" + authorization + '\'' +
+                ", balance=" + balance +
+                ", code=" + code +
+                ", currentBalance=" + currentBalance +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }

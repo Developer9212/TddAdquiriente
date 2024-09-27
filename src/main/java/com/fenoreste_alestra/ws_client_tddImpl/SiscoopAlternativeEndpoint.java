@@ -125,11 +125,11 @@ public interface SiscoopAlternativeEndpoint {
 	    @WebMethod
 	    @WebResult(name = "return", targetNamespace = "http://ws.siscoop.creatoris.com/", partName = "return")
 	    public AssignmentAccountResponse assignmentAccount(
-
 	        @WebParam(partName = "pan", name = "pan")
 	        java.lang.String pan,
 	        @WebParam(partName = "clientInfo", name = "clientInfo")
-	        InfoClientRequest clientInfo
+	        AssignamentAccountDto clientInfo
+			//InfoClientRequest clientInfo
 	    );
 
 	    @WebMethod

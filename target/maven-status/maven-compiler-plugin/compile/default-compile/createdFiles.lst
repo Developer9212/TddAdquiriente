@@ -26,9 +26,11 @@ com\fenoreste_alestra\ws_client_tdd\UpdateIndividualLimits.class
 com\fenoreste_alestra\ws_client_tdd\CardInfo.class
 com\fenoreste_alestra\ws_client_tdd\AssignmentAccountResponse.class
 com\fenoreste_alestra\service\NipServiceImpl.class
+com\fenoreste_alestra\service\ISaldoService.class
 com\fenoreste_alestra\ws_client_tdd\LoadBalanceResponse.class
 com\fenoreste_alestra\ws_client_tdd\GetBalanceQueryResponse.class
 com\fenoreste_alestra\service\ReemplazoServiceImpl.class
+com\fenoreste_alestra\service\TransaccionDTOServiceImpl.class
 com\fenoreste_alestra\ws_client_tdd\GetBalanceQuery.class
 com\fenoreste_alestra\entity\Reemplazo.class
 com\fenoreste_alestra\ws_client_tdd\CardLockResponse.class
@@ -52,11 +54,15 @@ com\fenoreste_alestra\service\ModificarLimiteServiceImpl.class
 com\fenoreste_alestra\ws_client_tdd\BasicAuthRespDto.class
 com\fenoreste_alestra\service\ITablaService.class
 com\fenoreste_alestra\ws_client_tdd\TemporaryLock.class
+com\fenoreste_alestra\service\ITransaccionDTOService.class
 com\fenoreste_alestra\ws_client_tdd\NipRequest.class
 com\fenoreste_alestra\ws_client_tdd\AddressDto.class
 com\fenoreste_alestra\ws_client_tdd\UpdateDemographicData.class
 com\fenoreste_alestra\ws_client_tdd\IndividualLimitsDto.class
+com\fenoreste_alestra\dao\TransaccionDao.class
 com\fenoreste_alestra\ws_client_tddImpl\SiscoopAlternativeEndpointImplService.class
+com\fenoreste_alestra\dao\TransaccionDTODao.class
+com\fenoreste_alestra\service\TddGeneralService.class
 com\fenoreste_alestra\ws_client_tdd\StockCardReplacement.class
 com\fenoreste_alestra\service\BistInformacionServiceImpl.class
 com\fenoreste_alestra\ws_client_tdd\GetLastestTransactions.class
@@ -68,7 +74,9 @@ com\fenoreste_alestra\config\ClientKeystorePasswordCallback.class
 com\fenoreste_alestra\dao\AsignacionDao.class
 com\fenoreste_alestra\ws_client_tdd\TransactionDto.class
 com\fenoreste_alestra\service\EliminarLimiteServiceImpl.class
+com\fenoreste_alestra\ws_client_tdd\AssignamentAccountDto.class
 com\fenoreste_alestra\ws_client_tdd\GetCardholderInformation.class
+com\fenoreste_alestra\config\sd.class
 com\fenoreste_alestra\service\IBloqueoService.class
 com\fenoreste_alestra\dao\BloqueoTemporalDao.class
 com\fenoreste_alestra\ws_client_tdd\GetLastestTransactionsResponse.class
@@ -84,6 +92,7 @@ com\fenoreste_alestra\service\IInformacionService.class
 com\fenoreste_alestra\entity\BloqueoTemporal.class
 com\fenoreste_alestra\dao\DepositoDao.class
 com\fenoreste_alestra\ws_client_tdd\DeleteIndividualLimits.class
+com\fenoreste_alestra\service\TransaccionServiceImpl.class
 com\fenoreste_alestra\service\InformacionServiceImpl.class
 com\fenoreste_alestra\ws_client_tdd\AsignaNIPResponse.class
 com\fenoreste_alestra\ws_client_tdd\TemporaryLockResponse.class
@@ -91,11 +100,13 @@ com\fenoreste_alestra\entity\TablaPK.class
 com\fenoreste_alestra\service\TablaServiceImpl.class
 com\fenoreste_alestra\ws_client_tdd\CardHolderInformationResponse.class
 com\fenoreste_alestra\ws_client_tdd\UpdateDemographicData$Cardinfo.class
+com\fenoreste_alestra\controller\AccountController.class
 com\fenoreste_alestra\ws_client_tddImpl\SiscoopAlternativeEndpoint.class
 com\fenoreste_alestra\ws_client_tdd\SaveInformationClientBitMatch$Arg0.class
 com\fenoreste_alestra\EmisorAdquirienteApplication.class
 com\fenoreste_alestra\service\BloqueoTemporalServiceImpl.class
 com\fenoreste_alestra\dao\InformacionDao.class
+com\fenoreste_alestra\service\ITransaccionService.class
 com\fenoreste_alestra\service\IActivacionService.class
 com\fenoreste_alestra\ws_client_tdd\CardAssignmentResponseDto.class
 com\fenoreste_alestra\dao\DemograficoDao.class
@@ -107,6 +118,7 @@ com\fenoreste_alestra\dao\NipDao.class
 com\fenoreste_alestra\entity\Activacion.class
 com\fenoreste_alestra\entity\BitsInformacion.class
 com\fenoreste_alestra\service\DepositoServiceImpl.class
+com\fenoreste_alestra\service\GlobalExceptionHandler.class
 com\fenoreste_alestra\entity\EliminarLimite.class
 com\fenoreste_alestra\dao\BitsInformacionDao.class
 com\fenoreste_alestra\ws_client_tdd\ActivateCardResponse.class
@@ -115,6 +127,7 @@ com\fenoreste_alestra\ws_client_tdd\GetCardholderInformationResponse$Return.clas
 com\fenoreste_alestra\entity\Nip.class
 com\fenoreste_alestra\service\IEliminarLimiteService.class
 com\fenoreste_alestra\config\ConfigurationClient.class
+com\fenoreste_alestra\service\SaldoServiceImpl.class
 com\fenoreste_alestra\service\RetiroServiceImpl.class
 com\fenoreste_alestra\dao\TablaDao.class
 com\fenoreste_alestra\service\IRetiroService.class

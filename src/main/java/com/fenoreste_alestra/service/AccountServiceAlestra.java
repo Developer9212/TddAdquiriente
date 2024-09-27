@@ -1,29 +1,11 @@
 package com.fenoreste_alestra.service;
 
 
+import com.fenoreste_alestra.ws_client_tdd.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import com.fenoreste_alestra.ws_client_tdd.ActivateCardResponse;
-import com.fenoreste_alestra.ws_client_tdd.AsignaNIPResponse;
-import com.fenoreste_alestra.ws_client_tdd.AssignmentAccountResponse;
-import com.fenoreste_alestra.ws_client_tdd.BalanceQueryResponseDto;
-import com.fenoreste_alestra.ws_client_tdd.CardHolderInformationResponse;
-import com.fenoreste_alestra.ws_client_tdd.CardInfo;
-import com.fenoreste_alestra.ws_client_tdd.CardLockResponse;
-import com.fenoreste_alestra.ws_client_tdd.DeleteIndividualLimitsResponse;
-import com.fenoreste_alestra.ws_client_tdd.DoWithdrawalAccountResponse;
-import com.fenoreste_alestra.ws_client_tdd.GetLastestTransactionsResponse;
-import com.fenoreste_alestra.ws_client_tdd.IndividualLimitsDto;
-import com.fenoreste_alestra.ws_client_tdd.InfoClientRequest;
-import com.fenoreste_alestra.ws_client_tdd.LoadBalanceResponse;
-import com.fenoreste_alestra.ws_client_tdd.NipRequest;
-import com.fenoreste_alestra.ws_client_tdd.SaveInformationClientBitMatchResponse;
-import com.fenoreste_alestra.ws_client_tdd.StockCardReplacementResponse;
-import com.fenoreste_alestra.ws_client_tdd.TemporaryLockResponse;
-import com.fenoreste_alestra.ws_client_tdd.UpdateDemographicDataResponse;
-import com.fenoreste_alestra.ws_client_tdd.UpdateIndividualLimitsResponse;
 import com.fenoreste_alestra.ws_client_tddImpl.Exception;
 import com.fenoreste_alestra.ws_client_tddImpl.SiscoopAlternativeEndpoint;
 
@@ -40,15 +22,11 @@ public class AccountServiceAlestra {
 	
 	@Autowired
     private SiscoopAlternativeEndpoint clienteWS;
-    
-	
-	
-	
      
     public BalanceQueryResponseDto getBalance(String idcard) {
-    	//BalanceQueryResponseDto service = new SiscoopAlternativeEndpointImplService().getPort(SiscoopAlternativeEndpoint.class).getBalanceQuery(idcard);
-    	
-    	return clienteWS.getBalanceQuery(idcard);
+    	BalanceQueryResponseDto saldoAlestra = clienteWS.getBalanceQuery(idcard);
+		System.out.println("Saldo Alestra: " + saldoAlestra);
+    	return saldoAlestra;
     }
     
     public CardLockResponse cardLock(String idcard) throws Exception {
@@ -62,9 +40,7 @@ public class AccountServiceAlestra {
     public LoadBalanceResponse loadBalance(String idcard,String amount) throws NumberFormatException, Exception {
     	return clienteWS.loadBalance(idcard,amount);
     }
-    
-    
-    
+
     public UpdateDemographicDataResponse updateDemographicData(String pan,CardInfo data) {
     	return clienteWS.updateDemographicData(pan,data);
     }
@@ -113,8 +89,8 @@ public class AccountServiceAlestra {
     	return information;
     }
     
-    public AssignmentAccountResponse assignamentAccount(String pan,InfoClientRequest info) {
-    	return clienteWS.assignmentAccount(pan,info);
+    public AssignmentAccountResponse assignamentAccount(String pan, AssignamentAccountDto assignmentAccount) {
+    	return clienteWS.assignmentAccount(pan,assignmentAccount);
     	
     }
     

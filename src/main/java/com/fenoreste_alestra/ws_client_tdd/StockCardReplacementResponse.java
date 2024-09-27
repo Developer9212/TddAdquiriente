@@ -1,6 +1,8 @@
 
 package com.fenoreste_alestra.ws_client_tdd;
 
+import lombok.Data;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
@@ -49,6 +51,7 @@ import javax.xml.bind.annotation.XmlType;
     "status"
     
 })
+@Data
 public class StockCardReplacementResponse {
 
     protected String authorization;

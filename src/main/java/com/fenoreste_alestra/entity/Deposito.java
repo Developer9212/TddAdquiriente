@@ -8,15 +8,14 @@ import java.util.Date;
 
 @Data
 @Entity
-@Table(name="bloqueo_tdd")
+@Table(name="deposito_tdd")
 public class Deposito implements Serializable{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date fecha;
     private String tarjeta;
     private  String peticion;
-    private Date fecha;
     private Integer codigo;
     private String descripcion;
     private String autorizacion;

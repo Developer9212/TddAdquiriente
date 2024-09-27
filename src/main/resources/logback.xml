@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- Definir el appender que guarda los logs en archivo -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- Archivo de log donde se guardarán los mensajes -->
+        <file>${user.home}/emisor-adquiriente/logs/log-emisor</file>
+
+        <!-- Definir cómo rotar el archivo de log -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- Nombre del archivo de log rotado con fecha -->
+            <fileNamePattern>logs/log-emisor-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!-- Mantener logs rotados por 30 días -->
+            <maxHistory>30</maxHistory>
+            <!-- Comprimir logs rotados -->
+            <cleanHistoryOnStart>true</cleanHistoryOnStart>
+        </rollingPolicy>
+
+        <!-- Formato del log -->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Definir el appender de consola (opcional) -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Definir el logger raíz (ROOT logger) -->
+    <root level="info">
+        <appender-ref ref="FILE" />
+        <appender-ref ref="STDOUT" />
+    </root>
+
+    <!-- Definir un logger específico para una clase o paquete -->
+    <logger name="com.fenoreste_alestra" level="debug" additivity="false">
+        <appender-ref ref="FILE" />
+    </logger>
+</configuration>

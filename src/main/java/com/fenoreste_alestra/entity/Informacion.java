@@ -12,21 +12,21 @@ import java.util.Date;
 public class Informacion implements Serializable {
 
     @Id
-    private Integer id;
-    private String peticion;
-    private String tarjeta;
     @Temporal(TemporalType.TIMESTAMP)
     private Date fecha;
+    private String peticion;
+    private String tarjeta;
+    private  Integer codigo;
+    private String descripcion;
+    private String tarjetaresponse;
     private String nombre;
     private String direccion;
-    private String direccion2;
     private String colonia;
     private String localidad;
     private String estado;
+    private String rfc;
     private String codigopostal;
     private String telefono;
-    private String telefono2;
-    private String telefono3;
     private boolean correcto;
 
     private static final long serialVersionUID = 1L;
