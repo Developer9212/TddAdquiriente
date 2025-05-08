@@ -5,4 +5,6 @@ import com.fenoreste_alestra.entity.Reemplazo;
 public interface IReemplazoService {
 
     public Reemplazo guardarReemplazo(Reemplazo reemplazo);
+
+    public Reemplazo buscarPorTarjetaNueva(String tarjeta);
 }

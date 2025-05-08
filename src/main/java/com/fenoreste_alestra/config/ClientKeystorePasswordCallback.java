@@ -17,8 +17,11 @@ public class ClientKeystorePasswordCallback implements CallbackHandler{
     
     static {
 		users = new HashMap<>();
-		users.put("app1", "fenoreste2024");
-        users.put("buenos-local", "fenoreste2024");
+        users.put("prod-tdd", "fenoreste2024");
+        users.put("sagrada-qa1", "fenoreste2024");
+
+		/*users.put("app-qa", "fenoreste2025."); Sagrada-Familia
+        users.put("tdd-prod", "fenoreste2025.");*/
     }
 
     public void handle(Callback[] callbacks) throws IOException,UnsupportedCallbackException {
@@ -27,9 +30,7 @@ public class ClientKeystorePasswordCallback implements CallbackHandler{
         for (int i = 0; i < callbacks.length; i++) {
 
             WSPasswordCallback pc = (WSPasswordCallback) callbacks[i];
-            
-            if (pc.getUsage() == WSPasswordCallback.SIGNATURE
-                    || pc.getUsage() == WSPasswordCallback.DECRYPT && (users.containsKey(pc.getIdentifier()))) {
+            if (pc.getUsage() == WSPasswordCallback.SIGNATURE   || pc.getUsage() == WSPasswordCallback.DECRYPT && (users.containsKey(pc.getIdentifier()))) {
                 	pc.setPassword(users.get(pc.getIdentifier()));                  
             }
 

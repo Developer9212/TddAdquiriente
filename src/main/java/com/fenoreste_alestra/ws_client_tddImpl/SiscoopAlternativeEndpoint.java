@@ -26,7 +26,6 @@ public interface SiscoopAlternativeEndpoint {
 	  @WebMethod
 	    @WebResult(name = "return", targetNamespace = "http://ws.siscoop.creatoris.com/", partName = "return")
 	    public BalanceQueryResponseDto getBalanceQuery(
-
 	        @WebParam(partName = "arg0", name = "arg0")
 	        java.lang.String arg0
 	    );

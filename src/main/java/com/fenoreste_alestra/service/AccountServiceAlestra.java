@@ -24,6 +24,7 @@ public class AccountServiceAlestra {
     private SiscoopAlternativeEndpoint clienteWS;
      
     public BalanceQueryResponseDto getBalance(String idcard) {
+
     	BalanceQueryResponseDto saldoAlestra = clienteWS.getBalanceQuery(idcard);
 		System.out.println("Saldo Alestra: " + saldoAlestra);
     	return saldoAlestra;

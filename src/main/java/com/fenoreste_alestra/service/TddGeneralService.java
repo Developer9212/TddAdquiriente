@@ -75,13 +75,15 @@ public class TddGeneralService {
 
             //Nos aseguramos que la tarjeta que estamos activando este asignada
             Asignacion asignacion = asignacionService.buscarPorTarjeta(idCard);
+            Reemplazo reemplazo = reemplazoService.buscarPorTarjetaNueva(idCard);
+
             Activacion activacion = new Activacion();
             activacion.setFecha(new Date());
             activacion.setPeticion(request.getRequestURI());
             activacion.setTarjeta(idCard);
             activacion.setDescripcion("Conexion invalida hacia proveedor TDD");
             activacion.setCorrecta(false);
-            if(asignacion != null) {
+            if(asignacion != null || reemplazo != null) {
                 activateCardResponse = accountServiceAlestra.activeCard(idCard);
                 log.info("Active Card Response:"+activateCardResponse);
                 if(activateCardResponse != null){

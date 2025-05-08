@@ -17,4 +17,9 @@ public class ReemplazoServiceImpl implements IReemplazoService{
         reemplazoDao.save(reemplazo);
         return reemplazo;
     }
+
+    @Override
+    public Reemplazo buscarPorTarjetaNueva(String tarjeta) {
+        return reemplazoDao.findByTarjetanueva(tarjeta);
+    }
 }

@@ -62,9 +62,9 @@ public class ConfigurationClient {
     public WSS4JOutInterceptor wss4jOut(){
     	Map<String, Object> outProps = new HashMap<>();
 		outProps.put(ConfigurationConstants.ACTION,ConfigurationConstants.ENCRYPTION + " " + ConfigurationConstants.SIGNATURE);
-		outProps.put(ConfigurationConstants.USER, "buenos-local");
-		outProps.put(ConfigurationConstants.SIGNATURE_USER, "buenos-local");
-		outProps.put(ConfigurationConstants.ENCRYPTION_USER, "app1");//"appcert");														      			
+		outProps.put(ConfigurationConstants.USER, "sagrada-qa1");
+		outProps.put(ConfigurationConstants.SIGNATURE_USER, "sagrada-qa1");  // --Buenos test : buenos-local
+		outProps.put(ConfigurationConstants.ENCRYPTION_USER, "prod-tdd");//"appcert");			--Buenos: app1
 		outProps.put(ConfigurationConstants.ENC_PROP_FILE, new FicheroConexion().getUserHome()+"/emisor-adquiriente/cert-properties/local.properties");//"/home/siscoop/Certs/Ssl/fenoreste.properties");
 		outProps.put(ConfigurationConstants.SIG_PROP_FILE, new FicheroConexion().getUserHome()+"/emisor-adquiriente/cert-properties/proveedor.properties");//"/home/siscoop/Certs/Ssl/appcert.properties");
 		outProps.put(ConfigurationConstants.ENC_KEY_ID, "DirectReference");
